@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+
+    <!-- ImageView to display the selected or taken photo (centered between the two buttons) -->
+    <Button
+        android:id="@+id/btnSeeJournal"
+        android:layout_width="320dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="32dp"
+        android:text="See My Skin Journal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ImageView to display the selected or taken photo (centered between the two buttons) -->
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="320dp"
+        android:layout_height="451dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_launcher_background"
+        android:contentDescription="Photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSeeJournal"
+        app:layout_constraintBottom_toTopOf="@id/btnBackToHome"
+        android:scaleType="centerCrop" />
+
+    <!-- Button to take a picture with the camera -->
+    <Button
+        android:id="@+id/btnBackToHome"
+        android:layout_width="320dp"
+        android:layout_height="41dp"
+        android:text="Back to Homepage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivPhoto"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
